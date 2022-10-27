@@ -128,7 +128,7 @@
     height: calc(100vh - 86px);
     margin-top: 86px;
     padding: 2rem;
-    background-image: url("img/HeroImageFQA-mobile.png");
+    background-image: url("../img/HeroImageFQA-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -369,7 +369,7 @@ h1.section-title.aboutus {
     }
 
     #hero {
-        background-image: url("/img/HeroImageFQA.png");
+        background-image: url("../img/HeroImageFQA.png");
         padding: 0px 7rem !important;
     }
     #hero > div > h1 > br {
