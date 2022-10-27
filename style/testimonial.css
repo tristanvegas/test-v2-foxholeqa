@@ -1,0 +1,142 @@
+#testimonial-outer {
+    --card-height: 190px;
+    --card-width: 260px;
+    display: flex;
+}
+.testimonial-container{
+    height: calc(var(--card-height) + 150px);
+    width: calc(var(--card-width) + 130px);
+}
+.testimonial-container > .testimonial-prev {
+    position: absolute;
+    height: calc(var(--card-height) - 90px);
+    width: calc(var(--card-width) - 40px);
+    margin-top: 0px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+.testimonial-container > .testimonial-next {
+    position: absolute;
+    height: calc(var(--card-height) - 90px);
+    width: calc(var(--card-width) - 40px);
+    margin-top: 0px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+#testimonial-container {
+    position: relative;
+    margin: 80px 10px 0px 30px;
+    height: var(--card-height);
+    width: var(--card-width);
+}
+.testimonial-card {
+    position: absolute;
+    background-color: #fff;
+    width: var(--card-width);
+    height: var(--card-height);
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    -moz-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+.testimonial-card > .img > img {
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#testimonial-container > .testimonial-card {
+    transition: all .5s ease-in-out;
+    pointer-events: none;
+}
+#testimonial-container > .card-hide {
+    top: -90px;
+    left: 70px;
+    opacity: 0;
+    scale: 0.3;
+    z-index: -2;
+}
+#testimonial-container > .card-active {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    scale: 1;
+    z-index: 1;
+}
+#testimonial-controls {
+    margin: auto 0px;
+    height: 140px;
+}
+#testimonial-container > .card-prev {
+    top: -70px;
+    left: 50px;
+    opacity: 0.3;
+    scale: 0.8;
+    z-index: -1;
+}
+#testimonial-container > .card-next {
+    top: 70px;
+    left: 50px;
+    opacity: 0.3;
+    scale: 0.8;
+    z-index: -1;
+}
+/* #testimonial-container > .card-hide-top{
+    top: -90px;
+    left: 70px;
+    opacity: 0;
+    scale: .3;
+    z-index: -2;
+}
+#testimonial-container > .card-hide-bottom{
+    top: 90px;
+    left: 70px;
+    opacity: 0;
+    scale: .3;
+    z-index: -2;
+} */
+
+.testimonial-prev,
+.testimonial-next {
+    color: #333333;
+}
+
+.testimonial-prev:hover,
+.testimonial-next:hover {
+    color: #b62727;
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 480px){
+    #testimonial-outer {
+        --card-height: 190px;
+        --card-width: 400px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    #testimonial-outer {
+        --card-height: 190px;
+        --card-width: 290px;
+    }
+}
+@media only screen and (min-width: 1024px){
+    #testimonial-outer {
+        --card-height: 190px;
+        --card-width: 400px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    #testimonial-outer {
+        --card-height: 190px;
+        --card-width: 450px;
+    }
+}

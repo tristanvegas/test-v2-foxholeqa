@@ -1,1 +1,949 @@
-html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/style/bootstrap.css" />
+    <link rel="stylesheet" href="/style/gallery.css" />
+    <link rel="stylesheet" href="/style/testimonial.css" />
+    <link rel="stylesheet" href="/style/app.css" />
+    <link rel="stylesheet" href="/style/font/abel.css" />
+    <link rel="stylesheet" href="/style/font/raleway.css" />
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target=".nav"
+    data-bs-offset="50"
+    style="position: relative"
+  >
+    <nav class="navbar navbar-expand-md navbar-dark bg-1 fixed-top">
+      <div class="navbar-container container-fluid">
+        <a href="#" class="navbar-brand toTop">
+          <img src="/img/icons/foxholeqa-new.png" alt="" height="60px" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+        >
+          <i class="fa-solid fa-bars fa-1x"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active-menu">
+              <a href="#hero" class="nav-link hero text-white toTop"
+                >Foxhole QA</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link services text-white"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#featuredWork" class="nav-link featuredWork text-white"
+                >Featured Work</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#aboutUs" class="nav-link aboutUs text-white"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-white">Blog</a>
+            </li>
+            <li class="nav-item d-flex">
+              <a
+                href="#getQuoteBox"
+                class="nav-link text-white btn btn-2 my-auto"
+                >Get Started</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="hero" class="section d-flex">
+      <div class="container my-auto text-white">
+        <h1 class="display-4 fw-bolder">Foxhole QA</h1>
+        <h1 class="h1">We are in the <br />Trenches with you.</h1>
+        <p>
+          We have your back when you need that perfect launch. With our group of
+          seasoned technologists and testers, we do the job right the first
+          time. Saving you time and money.
+        </p>
+        <a href="#footer" class="btn btn-1 my-auto">Get Started</a>
+      </div>
+    </div>
+
+    <div id="services" class="section">
+      <div class="container">
+        <h1 class="section-title">Our Services</h1>
+
+        <div class="services-container">
+          <div class="services-card">
+            <div class="service">
+              <img
+                src="/img/icons/services/automation.svg"
+                alt=""
+                height="60px"
+              />
+              <h5 class="text-center mb-0 mt-2">Automation</h5>
+              <p class="text-center mb-0 mt-4">
+                Our team’s background in DevOps and continuous testing makes
+                automating those repetitive test cases easier to run.
+              </p>
+            </div>
+          </div>
+          <div class="services-card">
+            <div class="service">
+              <img src="/img/icons/services/backend.svg" alt="" height="60px" />
+
+              <h5 class="text-center mb-0 mt-2">Back End Testing</h5>
+              <p class="text-center mb-0 mt-4">
+                With Databases, CMS tools, APIs and other backend technologies,
+                our team can assist to make sure those backend test cases are
+                covered as well.
+              </p>
+            </div>
+          </div>
+          <div class="services-card">
+            <div class="service">
+              <img
+                src="/img/icons/services/accessibility.svg"
+                alt=""
+                height="60px"
+              />
+
+              <h5 class="text-center mb-0 mt-2">Accessibility</h5>
+              <p class="text-center mb-0 mt-4">
+                Foxhole’s accessibility report and checklist covers the latest
+                ADA and WCAG compliance standards to address access for people
+                with physical, sensory, or cognitive disabilities.
+              </p>
+            </div>
+          </div>
+          <div class="services-card">
+            <div class="service">
+              <img src="/img/icons/services/UI.svg" alt="" height="60px" />
+
+              <h5 class="text-center mb-0 mt-2">UI & Compatibility</h5>
+              <p class="text-center mb-0 mt-4">
+                With a lab of mobile devices (not emulators), desktops and other
+                hardware, Foxhole has you covered! We can ensure the integrity
+                of your site/app across any screen size, operating system,
+                platform or combination necessary.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a href="services.html" class="btn btn-1">View More</a>
+        </div>
+      </div>
+    </div>
+    <div class="section mt-5" id="featuredWork">
+      <div class="container">
+        <h1 class="section-title">Featured Work</h1>
+        <div class="row justify-content-center mx-auto">
+          <div class="col-md-6 col-lg-4 my-2">
+            <div class="feat-outer-container border px-2 py-4 mx-auto">
+              <div class="feat-container">
+                <img
+                  src="https://i.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI"
+                  height="500px"
+                  alt=""
+                />
+
+                <div class="w-100 bg-3 text-center text-white p-3">
+                  <h3 class="fw-bold">Company Name</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nobis reiciendis, dolorum aspernatur delectus accusamus
+                    eligendi.
+                  </p>
+                  <div class="text-start read-more">
+                    <a href="#" class="text-decoration-none text-white"
+                      >Read more <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 my-2">
+            <div class="feat-outer-container border px-2 py-4 mx-auto">
+              <div class="feat-container">
+                <img
+                  src="https://i.picsum.photos/id/361/200/300.jpg?hmac=unS_7uvpA3Q-hJTvI1xNCnlhta-oC6XnWZ4Y11UpjAo"
+                  height="500px"
+                  alt=""
+                />
+
+                <div class="w-100 bg-3 text-center text-white p-3">
+                  <h3 class="fw-bold">Company Name</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nobis reiciendis, dolorum aspernatur delectus accusamus
+                    eligendi.
+                  </p>
+                  <div class="text-start read-more">
+                    <a href="#" class="text-decoration-none text-white"
+                      >Read more <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 my-2">
+            <div class="feat-outer-container border px-2 py-4 mx-auto">
+              <div class="feat-container">
+                <img
+                  src="https://i.picsum.photos/id/984/200/300.jpg?hmac=mLBN3lSvSl08Vh8Kw96TLY7v239gr1idtxVXvYFDkSc"
+                  height="500px"
+                  alt=""
+                />
+
+                <div class="w-100 bg-3 text-center text-white p-3">
+                  <h3 class="fw-bold">Company Name</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nobis reiciendis, dolorum aspernatur delectus accusamus
+                    eligendi.
+                  </p>
+                  <div class="text-start read-more">
+                    <a href="#" class="text-decoration-none text-white"
+                      >Read more <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="/featuredWork.html" class="btn btn-1">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-2 py-5" id="counts">
+      <div class="container text-center my-3">
+        <h1 class="display-4" style="font-weight: 900">
+          Some count that matters
+        </h1>
+        <p class="fw-bold">
+          Our achievement in the journey depicted in numbers
+        </p>
+        <div class="count-container">
+          <div class="count-item">
+            <div class="count">
+              <h1 class="display-6 text-3 mb-0">
+                <span class="count-num">300</span>
+              </h1>
+              <p class="mb-0 fw-bold">Clients</p>
+            </div>
+          </div>
+          <div class="count-item count-large">
+            <div class="count">
+              <h1 class="display-6 text-3 mb-0">
+                <span class="count-num">800</span>+
+              </h1>
+              <p class="mb-0 fw-bold">Projects Completed</p>
+            </div>
+          </div>
+          <div class="count-item">
+            <div class="count">
+              <h1 class="display-6 text-4 mb-0">
+                <span class="count-num">1500</span>+
+              </h1>
+              <p class="mb-0 fw-bold">Bugs Found</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section mt-4" id="aboutUs">
+      <div class="container">
+        <h1 class="section-title aboutus">About Us</h1>
+        <p class="aboutus-p">
+          We have your back when you need that perfect launch. With our group of
+          seasoned <br />
+          technologists and testers, we do the job right the first time. Saving
+          you time and money.
+        </p>
+
+        <div class="container">
+          <div>
+            <div class="gallery-outer">
+              <div class="gallery-control-prev"></div>
+              <div class="gallery-container">
+                <div class="gallery-item gallery-hidden" data-gal-id="2">
+                  <img
+                    loading="lazy"
+                    src="/img/gallery/1.jpg"
+                    width="1080px"
+                    height="720px"
+                    alt=""
+                  />
+                </div>
+                <div class="gallery-item gallery-hidden-left" data-gal-id="3">
+                  <img
+                    loading="lazy"
+                    src="/img/gallery/2.jpg"
+                    width="1080px"
+                    height="720px"
+                    alt=""
+                  />
+                </div>
+                <div class="gallery-item gallery-prev" data-gal-id="4">
+                  <img
+                    loading="lazy"
+                    src="/img/gallery/3.jpg"
+                    width="1080px"
+                    height="720px"
+                    alt=""
+                  />
+                </div>
+                <div class="gallery-item gallery-active" data-gal-id="5">
+                  <img
+                    loading="lazy"
+                    src="/img/gallery/4.jpg"
+                    width="1080px"
+                    height="720px"
+                    alt=""
+                  />
+                </div>
+                <div class="gallery-item gallery-next" data-gal-id="6">
+                  <img
+                    loading="lazy"
+                    src="/img/gallery/5.jpg"
+                    width="1080px"
+                    height="720px"
+                    alt=""
+                  />
+                </div>
+                <div class="gallery-item gallery-hidden-right" data-gal-id="7">
+                  <img
+                    loading="lazy"
+                    src="/img/gallery/6.jpg"
+                    width="1080px"
+                    height="720px"
+                    alt=""
+                  />
+                </div>
+                <div class="gallery-item gallery-hidden" data-gal-id="8">
+                  <img
+                    loading="lazy"
+                    src="/img/gallery/7.jpg"
+                    width="1080px"
+                    height="720px"
+                    alt=""
+                  />
+                </div>
+                <div class="gallery-item gallery-hidden" data-gal-id="9">
+                  <img
+                    loading="lazy"
+                    src="/img/gallery/8.jpg"
+                    width="1080px"
+                    height="720px"
+                    alt=""
+                  />
+                </div>
+                <div class="gallery-item gallery-hidden">
+                  <img
+                    loading="lazy"
+                    src="/img/gallery/9.jpg"
+                    width="1080px"
+                    height="720px"
+                    alt=""
+                  />
+                </div>
+                <div class="gallery-item gallery-hidden">
+                  <img
+                    loading="lazy"
+                    src="/img/gallery/10.jpg"
+                    width="1080px"
+                    height="720px"
+                    alt=""
+                  />
+                </div>
+                <div class="gallery-item gallery-hidden">
+                  <img
+                    loading="lazy"
+                    src="/img/gallery/11.jpg"
+                    width="1080px"
+                    height="720px"
+                    alt=""
+                  />
+                </div>
+                <div class="gallery-item gallery-hidden">
+                  <img
+                    loading="lazy"
+                    src="/img/gallery/12.jpg"
+                    width="1080px"
+                    height="720px"
+                    alt=""
+                  />
+                </div>
+                <div class="gallery-item gallery-hidden">
+                  <img
+                    loading="lazy"
+                    src="/img/gallery/13.jpg"
+                    width="1080px"
+                    height="720px"
+                    alt=""
+                  />
+                </div>
+                <div class="gallery-item gallery-hidden">
+                  <img
+                    loading="lazy"
+                    src="/img/gallery/14.jpg"
+                    width="1080px"
+                    height="720px"
+                    alt=""
+                  />
+                </div>
+                <div class="gallery-item gallery-hidden">
+                  <img
+                    loading="lazy"
+                    src="/img/gallery/15.jpg"
+                    width="1080px"
+                    height="720px"
+                    alt=""
+                  />
+                </div>
+                <div class="gallery-item gallery-hidden">
+                  <img
+                    loading="lazy"
+                    src="/img/gallery/16.jpg"
+                    width="1080px"
+                    height="720px"
+                    alt=""
+                  />
+                </div>
+                <div class="gallery-item gallery-hidden" data-gal-id="1">
+                  <img
+                    loading="lazy"
+                    src="/img/gallery/17.jpg"
+                    width="1080px"
+                    height="720px"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="gallery-control-next"></div>
+            </div>
+            <div class="gallery-thumbnail">
+              <div
+                class="gallery-thumb-item gallery-thumb-prev-3"
+                data-gal-id="2"
+              >
+                <img
+                  loading="lazy"
+                  src="/img/gallery/thumb/1.jpg"
+                  height="100px"
+                  width="150px"
+                  alt=""
+                />
+              </div>
+              <div
+                class="gallery-thumb-item gallery-thumb-prev-2"
+                data-gal-id="3"
+              >
+                <img
+                  loading="lazy"
+                  src="/img/gallery/thumb/2.jpg"
+                  height="100px"
+                  width="150px"
+                  alt=""
+                />
+              </div>
+              <div
+                class="gallery-thumb-item gallery-thumb-prev-1"
+                data-gal-id="4"
+              >
+                <img
+                  loading="lazy"
+                  src="/img/gallery/thumb/3.jpg"
+                  height="100px"
+                  width="150px"
+                  alt=""
+                />
+              </div>
+              <div
+                class="gallery-thumb-item gallery-thumb-active"
+                data-gal-id="5"
+              >
+                <img
+                  loading="lazy"
+                  src="/img/gallery/thumb/4.jpg"
+                  height="100px"
+                  width="150px"
+                  alt=""
+                />
+              </div>
+              <div
+                class="gallery-thumb-item gallery-thumb-next-1"
+                data-gal-id="6"
+              >
+                <img
+                  loading="lazy"
+                  src="/img/gallery/thumb/5.jpg"
+                  height="100px"
+                  width="150px"
+                  alt=""
+                />
+              </div>
+              <div
+                class="gallery-thumb-item gallery-thumb-next-2"
+                data-gal-id="7"
+              >
+                <img
+                  loading="lazy"
+                  src="/img/gallery/thumb/6.jpg"
+                  height="100px"
+                  width="150px"
+                  alt=""
+                />
+              </div>
+              <div
+                class="gallery-thumb-item gallery-thumb-next-3"
+                data-gal-id="8"
+              >
+                <img
+                  loading="lazy"
+                  src="/img/gallery/thumb/7.jpg"
+                  height="100px"
+                  width="150px"
+                  alt=""
+                />
+              </div>
+              <div
+                class="gallery-thumb-item gallery-thumb-next-4"
+                data-gal-id="9"
+              >
+                <img
+                  loading="lazy"
+                  src="/img/gallery/thumb/8.jpg"
+                  height="100px"
+                  width="150px"
+                  alt=""
+                />
+              </div>
+              <div class="gallery-thumb-item gallery-thumb-hidden-right">
+                <img
+                  loading="lazy"
+                  src="/img/gallery/thumb/9.jpg"
+                  height="100px"
+                  width="150px"
+                  alt=""
+                />
+              </div>
+              <div class="gallery-thumb-item gallery-thumb-hidden">
+                <img
+                  loading="lazy"
+                  src="/img/gallery/thumb/10.jpg"
+                  height="100px"
+                  width="150px"
+                  alt=""
+                />
+              </div>
+              <div class="gallery-thumb-item gallery-thumb-hidden">
+                <img
+                  loading="lazy"
+                  src="/img/gallery/thumb/11.jpg"
+                  height="100px"
+                  width="150px"
+                  alt=""
+                />
+              </div>
+              <div class="gallery-thumb-item gallery-thumb-hidden">
+                <img
+                  loading="lazy"
+                  src="/img/gallery/thumb/12.jpg"
+                  height="100px"
+                  width="150px"
+                  alt=""
+                />
+              </div>
+              <div class="gallery-thumb-item gallery-thumb-hidden">
+                <img
+                  loading="lazy"
+                  src="/img/gallery/thumb/13.jpg"
+                  height="100px"
+                  width="150px"
+                  alt=""
+                />
+              </div>
+              <div class="gallery-thumb-item gallery-thumb-hidden">
+                <img
+                  loading="lazy"
+                  src="/img/gallery/thumb/14.jpg"
+                  height="100px"
+                  width="150px"
+                  alt=""
+                />
+              </div>
+              <div class="gallery-thumb-item gallery-thumb-hidden">
+                <img
+                  loading="lazy"
+                  src="/img/gallery/thumb/15.jpg"
+                  height="100px"
+                  width="150px"
+                  alt=""
+                />
+              </div>
+              <div class="gallery-thumb-item gallery-thumb-hidden-left">
+                <img
+                  loading="lazy"
+                  src="/img/gallery/thumb/16.jpg"
+                  height="100px"
+                  width="150px"
+                  alt=""
+                />
+              </div>
+              <div
+                class="gallery-thumb-item gallery-thumb-prev-4"
+                data-gal-id="1"
+              >
+                <img
+                  loading="lazy"
+                  src="/img/gallery/thumb/17.jpg"
+                  height="100px"
+                  width="150px"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5 py-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="container">
+              <p class="text-4 fw-bold">TESTIMONIALS</p>
+              <h1 class="text-3 display-5 fw-bold">
+                What people say <br />about Us.
+              </h1>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="testimonial-outer" class="mt-5">
+              <div class="testimonial-container">
+                <div class="testimonial-prev"></div>
+                <div id="testimonial-container">
+                  <div class="testimonial-card card-active">
+                    <div class="img">
+                      <img
+                        src="https://i.picsum.photos/id/473/200/200.jpg?hmac=lXsJQxtsh73ygSCMmcWA-YqIpQ4FjdxUYkkuLTAPBfM"
+                        alt=""
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="testimonial">
+                      <p class="mb-0">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Totam, recusandae!
+                      </p>
+                    </div>
+                    <div class="profile">
+                      <h4 class="mb-0">1. Genevieve Gilbert</h4>
+                      <p class="mb-0">Lorem, ipsum dolor.</p>
+                    </div>
+                  </div>
+                  <div class="testimonial-card card-next">
+                    <div class="img">
+                      <img
+                        src="https://i.picsum.photos/id/200/200/200.jpg?hmac=mk1Tu6dXHQvpaA8RfxlDUZjbWG23krNkiB9kyYoEmO8"
+                        alt=""
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="testimonial">
+                      <p class="mb-0">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Consequatur, esse.
+                      </p>
+                    </div>
+                    <div class="profile">
+                      <h4 class="mb-0">2. Joshua Douglas</h4>
+                      <p class="mb-0">Lorem, ipsum dolor.</p>
+                    </div>
+                  </div>
+                  <div class="testimonial-card card-hide">
+                    <div class="img">
+                      <img
+                        src="https://i.picsum.photos/id/685/200/200.jpg?hmac=1IjDFMSIa0T_JSvcq79_e2NWPwRJg61Ufbfu4eM4HvA"
+                        alt=""
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="testimonial">
+                      <p class="mb-0">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Odit, possimus.
+                      </p>
+                    </div>
+                    <div class="profile">
+                      <h4 class="mb-0">3. Gavin Figueroa</h4>
+                      <p class="mb-0">Lorem, ipsum dolor.</p>
+                    </div>
+                  </div>
+                  <div class="testimonial-card card-hide">
+                    <div class="img">
+                      <img
+                        src="https://i.picsum.photos/id/890/200/200.jpg?hmac=_chNVuEZW4X8X4PEIIJNyv3kMTFOR517hu8zLfMAf70"
+                        alt=""
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="testimonial">
+                      <p class="mb-0">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Odit, possimus.
+                      </p>
+                    </div>
+                    <div class="profile">
+                      <h4 class="mb-0">4. Marian Rios</h4>
+                      <p class="mb-0">Lorem, ipsum dolor.</p>
+                    </div>
+                  </div>
+                  <div class="testimonial-card card-prev">
+                    <div class="img">
+                      <img
+                        src="https://i.picsum.photos/id/1053/200/200.jpg?hmac=JOtR2adXynxSVClz0LNlPZjW0TJTRXc7c15kka2QoRk"
+                        alt=""
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="testimonial">
+                      <p class="mb-0">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Odit, possimus.
+                      </p>
+                    </div>
+                    <div class="profile">
+                      <h4 class="mb-0">5. Jayden Park</h4>
+                      <p class="mb-0">Lorem, ipsum dolor.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-next"></div>
+              </div>
+              <div
+                class="d-flex flex-column justify-content-around"
+                id="testimonial-controls"
+              >
+                <div class="testimonial-next">
+                  <i class="fa-solid fa-chevron-up fa-2x"></i>
+                </div>
+                <div class="testimonial-prev">
+                  <i class="fa-solid fa-chevron-down fa-2x"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-1 px-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <form action="#" method="post" id="footer">
+              <div
+                id="getQuoteBox"
+                class="d-flex flex-column border bg-white thick-shadow"
+              >
+                <h1 class="text-center text-3 fw-bold">Get Started</h1>
+                <p class="text-center">
+                  Ask for a Quote!<br />We'll get back to you within 24 hours.
+                </p>
+                <div class="d-flex flex-column text-white">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    value=""
+                    class="form-control"
+                    placeholder="Full Name"
+                    autocomplete="off"
+                  />
+
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    value=""
+                    class="form-control"
+                    placeholder="Email Address"
+                    autocomplete="off"
+                  />
+
+                  <input
+                    type="text"
+                    name="project"
+                    id="project"
+                    value=""
+                    class="form-control"
+                    placeholder="Project Name"
+                    autocomplete="off"
+                  />
+
+                  <textarea
+                    name="description"
+                    id="description"
+                    cols="30"
+                    rows="3"
+                    class="form-control"
+                    placeholder="Description"
+                    autocomplete="off"
+                  ></textarea>
+
+                  <input
+                    type="submit"
+                    value="Get a Quote"
+                    class="btn btn-1 mx-auto my-3 shadow"
+                  />
+                </div>
+                <div class="text-center">
+                  <p class="text-3 mb-0">or just email us</p>
+                  <a href="" class="text-3">info@foxholeqa.com</a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6 d-flex text-white">
+            <div class="mx-auto my-auto">
+              <p class="mb-5 text-center">Businesses that trusts Foxhole QA</p>
+              <div
+                id="footer-brands"
+                class="d-flex flex-wrap justify-content-center"
+              >
+                <img src="/img/logo/Partner Logo 1.png" alt="" height="50px" />
+                <img src="/img/logo/Partner Logo 2.png" alt="" height="50px" />
+                <img src="/img/logo/Partner Logo 3.png" alt="" height="50px" />
+                <img src="/img/logo/Brand Logo 1.png" alt="" height="50px" />
+                <img src="/img/logo/Brand Logo 2.png" alt="" height="50px" />
+              </div>
+
+              <div class="text-center">
+                <button
+                  id="subscribeBtn"
+                  class="btn btn-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#subscription"
+                >
+                  Get the Latest News
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-3 text-center text-white">
+        <div
+          class="col-lg-4 p-2 d-flex justify-content-center text-dark"
+          style="gap: 5px"
+        >
+          <div class="social-icon">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+          <div class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="social-icon">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="social-icon">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+        <div class="col-lg-4 p-2">
+          <p class="mb-0">© 2022 Foxhole QA LLC. All Rights Reserved.</p>
+        </div>
+        <div class="col-lg-4 p-2">
+          <p class="mb-0">LOS ANGELES, CA | AUSTIN, TX | MIAMI, FL</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="subscription">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content thick-shadow border-0">
+                <div class="modal-body">
+                    <div class="d-flex">
+                        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal"></button>
+                    </div>
+    
+                    <div class="text-center py-3">
+                        <h1 class="modal-head">Subscribe to the Newsletter</h1>
+                        <p>By subscribing to our mailing list you will always get the<br>latest news and updates from us.</p>
+    
+                        <form action="" method="post">
+                            <input type="text" name="" id="" placeholder="Full Name" class="form-control w-75 mx-auto my-2">
+                            <input type="email" name="" id="" placeholder="Email Address" class="form-control w-75 mx-auto my-2">
+    
+                            <input type="submit" value="Submit" class="btn btn-danger btn-1 my-4 d-none">
+                            <button type="button" class="modal-btn btn btn-1 my-4" data-bs-toggle="modal" data-bs-target="#subscriptionConfirm">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="subscriptionConfirm">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content thick-shadow border-0">
+                <div class="modal-body">
+                    <div class="d-flex">
+                        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal"></button>
+                    </div>
+    
+                    <div class="text-center py-3">
+                        <h1 class="modal-head">Thanks for Subscribing!</h1>
+                        <p>You are now subscribed to the Foxhole<br>QA newsletter</p>
+    
+                        <button class="modal-btn btn btn-1 my-1" data-bs-dismiss="modal">Exit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/fontawesome.js"></script>
+    <script src="/js/gallery.js"></script>
+    <script src="/js/testimonial.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
