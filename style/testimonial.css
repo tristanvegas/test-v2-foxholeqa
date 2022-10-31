@@ -110,8 +110,18 @@
 
 .testimonial-prev:hover,
 .testimonial-next:hover {
-    color: #b62727;
+    color: #CA2933;
     cursor: pointer;
+}
+
+.testimonial-icon{
+    transition: color .5s ease-in-out;
+}
+.testimonial-icon:hover{
+    cursor: pointer;
+}
+.testimonial-icon.icon-active{
+    color: #CA2933;
 }
 
 

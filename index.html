@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Foxhole QA</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foxhole QA</title>
 
-        <link rel="icon" href="./img/icons/foxhole-icon.png" type="image/png">
-    
-        <link rel="stylesheet" href="./style/bootstrap.css" />
-        <link rel="stylesheet" href="./style/gallery.css" />
-        <link rel="stylesheet" href="./style/testimonial.css" />
-        <link rel="stylesheet" href="./style/app.css" />
-        <link rel="stylesheet" href="./style/font/abel.css" />
-        <link rel="stylesheet" href="./style/font/raleway.css" />
-    </head>
+    <link rel="icon" href="./img/icons/foxhole-icon.png" type="image/png" />
+
+    <link rel="stylesheet" href="./style/bootstrap.css" />
+    <link rel="stylesheet" href="./style/gallery.css" />
+    <link rel="stylesheet" href="./style/testimonial.css" />
+    <link rel="stylesheet" href="./style/app.css" />
+    <link rel="stylesheet" href="./style/font/abel.css" />
+    <link rel="stylesheet" href="./style/font/raleway.css" />
+  </head>
   <body
     data-bs-spy="scroll"
     data-bs-target=".nav"
@@ -22,9 +22,9 @@
     style="position: relative"
   >
     <nav class="navbar navbar-expand-md navbar-dark bg-1 fixed-top">
-      <div class="navbar-container container-fluid">
-        <a href="#" class="navbar-brand toTop">
-          <img src="./img/icons/foxholeqa-new.png" alt="" height="60px" />
+      <div class="navbar-container container">
+        <a href="#" class="navbar-brand">
+          <img src="/img/icons/foxholeqa-new.png" alt="" height="60px" />
         </a>
 
         <button
@@ -39,32 +39,26 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item active-menu">
-              <a href="#hero" class="nav-link hero text-white toTop"
-                >Foxhole QA</a
-              >
+              <a href="hero" class="nav-link hero text-white">Foxhole QA</a>
             </li>
             <li class="nav-item">
-              <a href="#services" class="nav-link services text-white"
+              <a href="services" class="nav-link services text-white"
                 >Services</a
               >
             </li>
             <li class="nav-item">
-              <a href="#featuredWork" class="nav-link featuredWork text-white"
+              <a href="featuredWork" class="nav-link featuredWork text-white"
                 >Featured Work</a
               >
             </li>
             <li class="nav-item">
-              <a href="#aboutUs" class="nav-link aboutUs text-white"
-                >About Us</a
-              >
+              <a href="aboutUs" class="nav-link aboutUs text-white">About Us</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link text-white">Blog</a>
+              <a href="" class="nav-link text-white blog">Blog</a>
             </li>
             <li class="nav-item d-flex">
-              <a
-                href="#getQuoteBox"
-                class="nav-link text-white btn btn-2 my-auto"
+              <a href="" class="text-white btn btn-2 my-auto toFooter"
                 >Get Started</a
               >
             </li>
@@ -74,7 +68,7 @@
     </nav>
 
     <div id="hero" class="section d-flex">
-      <div class="container my-auto text-white">
+      <div class="container-fluid my-auto text-white">
         <h1 class="display-4 fw-bolder">Foxhole QA</h1>
         <h1 class="h1">We are in the <br />Trenches with you.</h1>
         <p>
@@ -82,7 +76,7 @@
           seasoned technologists and testers, we do the job right the first
           time. Saving you time and money.
         </p>
-        <a href="#footer" class="btn btn-1 my-auto">Get Started</a>
+        <a href="" class="btn btn-1 my-auto toFooter">Get Started</a>
       </div>
     </div>
 
@@ -90,68 +84,286 @@
       <div class="container">
         <h1 class="section-title">Our Services</h1>
 
-        <div class="services-container">
-          <div class="services-card">
-            <div class="service">
-              <img
-                src="./img/icons/services/automation.svg"
-                alt=""
-                height="60px"
-              />
-              <h5 class="text-center mb-0 mt-2">Automation</h5>
-              <p class="text-center mb-0 mt-4">
-                Our team’s background in DevOps and continuous testing makes
-                automating those repetitive test cases easier to run.
-              </p>
+        <div id="collapseAccordion">
+          <div
+            class="services-container collapse show"
+            id="serviceDefault"
+            data-bs-parent="#collapseAccordion"
+          >
+            <div class="services-card">
+              <div class="service shadow">
+                <img
+                  src="/img/icons/services/automation.svg"
+                  alt=""
+                  height="60px"
+                />
+                <h5 class="text-center mb-0 mt-2">Automation</h5>
+                <p class="text-center mb-0 mt-4">
+                  Our team’s background in DevOps and continuous testing makes
+                  automating those repetitive test cases easier to run.
+                </p>
+              </div>
+            </div>
+            <div class="services-card">
+              <div class="service shadow">
+                <img
+                  src="/img/icons/services/backend.svg"
+                  alt=""
+                  height="60px"
+                />
+                <h5 class="text-center mb-0 mt-2">Back End Testing</h5>
+                <p class="text-center mb-0 mt-4">
+                  With Databases, CMS tools, APIs and other backend
+                  technologies, our team can assist to make sure those backend
+                  test cases are covered as well.
+                </p>
+              </div>
+            </div>
+            <div class="services-card">
+              <div class="service shadow">
+                <img
+                  src="/img/icons/services/accessibility.svg"
+                  alt=""
+                  height="60px"
+                />
+                <h5 class="text-center mb-0 mt-2">Accessibility</h5>
+                <p class="text-center mb-0 mt-4">
+                  Foxhole’s accessibility report and checklist covers the latest
+                  ADA and WCAG compliance standards to address access for people
+                  with physical, sensory, or cognitive disabilities.
+                </p>
+              </div>
+            </div>
+            <div class="services-card">
+              <div class="service shadow">
+                <img src="/img/icons/services/UI.svg" alt="" height="60px" />
+                <h5 class="text-center mb-0 mt-2">UI & Compatibility</h5>
+                <p class="text-center mb-0 mt-4">
+                  With a lab of mobile devices (not emulators), desktops and
+                  other hardware, Foxhole has you covered! We can ensure the
+                  integrity of your site/app across any screen size, operating
+                  system, platform or combination necessary.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="services-card">
-            <div class="service">
-              <img src="./img/icons/services/backend.svg" alt="" height="60px" />
+          <div
+            class="services-container collapse"
+            id="moreService"
+            data-bs-parent="#collapseAccordion"
+          >
+            <div class="row justify-content-around mx-auto">
+              <div class="col-lg-7 row">
+                <div class="col-lg-6 py-3 text-center">
+                  <div class="service shadow">
+                    <img
+                      src="/img/icons/services/automation.svg"
+                      alt=""
+                      height="60px"
+                    />
+                    <h5 class="text-center mb-0 mt-2">Automation</h5>
+                    <p class="text-center mb-0 mt-4">
+                      Our team’s background in DevOps and continuous testing
+                      makes automating those repetitive test cases easier to
+                      run.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6 py-3 text-center">
+                  <div class="service shadow">
+                    <img
+                      src="/img/icons/services/backend.svg"
+                      alt=""
+                      height="60px"
+                    />
+                    <h5 class="text-center mb-0 mt-2">Back End Testing</h5>
+                    <p class="text-center mb-0 mt-4">
+                      With Databases, CMS tools, APIs and other backend
+                      technologies, our team can assist to make sure those
+                      backend test cases are covered as well.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 py-3 text-center">
+                <div class="service shadow">
+                  <img
+                    src="/img/icons/services/accessibility.svg"
+                    alt=""
+                    height="60px"
+                  />
+                  <h5 class="text-center mb-0 mt-2">Accessibility</h5>
+                  <p class="text-center mb-0 mt-4">
+                    Foxhole’s accessibility report and checklist covers the
+                    latest ADA and WCAG compliance standards to address access
+                    for people with physical, sensory, or cognitive
+                    disabilities.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-5 py-3 text-center">
+                <div class="service shadow">
+                  <img src="/img/icons/services/UI.svg" alt="" height="60px" />
+                  <h5 class="text-center mb-0 mt-2">UI & Compatibility</h5>
+                  <p class="text-center mb-0 mt-4">
+                    With a lab of mobile devices (not emulators), desktops and
+                    other hardware, Foxhole has you covered! We can ensure the
+                    integrity of your site/app across any screen size, operating
+                    system, platform or combination necessary.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-7 row">
+                <div class="col-lg-6 py-3 text-center">
+                  <div class="service shadow">
+                    <img
+                      src="/img/icons/services/design_and_comp.svg"
+                      alt=""
+                      height="60px"
+                    />
+                    <h5 class="text-center mb-0 mt-2">
+                      Design and Comp matching
+                    </h5>
+                    <p class="text-center mb-0 mt-4">
+                      With our interactive advertising experience, Foxhole has a
+                      creatively trained eye to ensure visuals are consistent,
+                      match style and font, and content placement is carried
+                      across the experience.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6 py-3 text-center">
+                  <div class="service shadow">
+                    <img
+                      src="/img/icons/services/performance.svg"
+                      alt=""
+                      height="60px"
+                    />
+                    <h5 class="text-center mb-0 mt-2">Performance (latency)</h5>
+                    <p class="text-center mb-0 mt-4">
+                      We perform page speed checks and look out for items that
+                      might slow a page down, such as large assets or too many
+                      items in the DOM.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 row">
+                <div class="col-lg-6 py-3 text-center">
+                  <div class="service shadow">
+                    <img
+                      src="/img/icons/services/copy.svg"
+                      alt=""
+                      height="60px"
+                    />
+                    <h5 class="text-center mb-0 mt-2">Copy Verification</h5>
+                    <p class="text-center mb-0 mt-4">
+                      Foxhole’s accessibility report and checklist covers the
+                      latest ADA and WCAG compliance standards to address access
+                      for people with physical, sensory, or cognitive
+                      disabilities.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6 py-3 text-center">
+                  <div class="service shadow">
+                    <img
+                      src="/img/icons/services/localization.svg"
+                      alt=""
+                      height="60px"
+                    />
+                    <h5 class="text-center mb-0 mt-2">Localization (L10n)</h5>
+                    <p class="text-center mb-0 mt-4">
+                      Foxhole tests global experiences often, running checks on
+                      localized and internationalized content so vital
+                      information reaches all customer bases.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 py-3 text-center">
+                <div class="service shadow">
+                  <img
+                    src="/img/icons/services/stress.svg"
+                    alt=""
+                    height="60px"
+                  />
+                  <h5 class="text-center mb-0 mt-2">Stress and Load testing</h5>
+                  <p class="text-center mb-0 mt-4">
+                    We can push your website, API or other software to the
+                    limit. For those moments when you need to be prepared for
+                    high traffic, Foxhole analyzes your preparedness before a
+                    launch.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-5 py-3 text-center">
+                <div class="service shadow">
+                  <img
+                    src="/img/icons/services/email.svg"
+                    alt=""
+                    height="60px"
+                  />
+                  <h5 class="text-center mb-0 mt-2">Email Campaign Testing</h5>
+                  <p class="text-center mb-0 mt-4">
+                    Our testing lab is equipped with many versions of email
+                    client software. Foxhole also runs other testing tools to
+                    ensure cross-platform display for fast-moving email
+                    campaigns.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-7 row">
+                <div class="col-lg-6 py-3 text-center">
+                  <div class="service shadow">
+                    <img
+                      src="/img/icons/services/ads.svg"
+                      alt=""
+                      height="60px"
+                    />
+                    <h5 class="text-center mb-0 mt-2">Display (Banner) Ads</h5>
+                    <p class="text-center mb-0 mt-4">
+                      Our QA testers are certified and trained with banner ads.
+                      We have experience in ad publishing platforms such as
+                      Double-Click, Sizmek, and Flashtalking, making it a breeze
+                      to get your paid media out the door.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6 py-3 text-center">
+                  <div class="service shadow">
+                    <img
+                      src="/img/icons/services/dev.svg"
+                      alt=""
+                      height="60px"
+                    />
+                    <h5 class="text-center mb-0 mt-2">
+                      Design and Development
+                    </h5>
+                    <p class="text-center mb-0 mt-4">
+                      As technologists, we tend to handle projects from start to
+                      finish when needed. Our designers and developers are
+                      creatively trained and reinforced with QA.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-              <h5 class="text-center mb-0 mt-2">Back End Testing</h5>
-              <p class="text-center mb-0 mt-4">
-                With Databases, CMS tools, APIs and other backend technologies,
-                our team can assist to make sure those backend test cases are
-                covered as well.
-              </p>
-            </div>
+          <div class="text-center mt-5">
+            <a
+              href="#moreService"
+              id="servicesShowMoreBtn"
+              data-bs-toggle="collapse"
+              class="btn btn-1"
+              >View More</a
+            >
           </div>
-          <div class="services-card">
-            <div class="service">
-              <img
-                src="./img/icons/services/accessibility.svg"
-                alt=""
-                height="60px"
-              />
-
-              <h5 class="text-center mb-0 mt-2">Accessibility</h5>
-              <p class="text-center mb-0 mt-4">
-                Foxhole’s accessibility report and checklist covers the latest
-                ADA and WCAG compliance standards to address access for people
-                with physical, sensory, or cognitive disabilities.
-              </p>
-            </div>
-          </div>
-          <div class="services-card">
-            <div class="service">
-              <img src="./img/icons/services/UI.svg" alt="" height="60px" />
-
-              <h5 class="text-center mb-0 mt-2">UI & Compatibility</h5>
-              <p class="text-center mb-0 mt-4">
-                With a lab of mobile devices (not emulators), desktops and other
-                hardware, Foxhole has you covered! We can ensure the integrity
-                of your site/app across any screen size, operating system,
-                platform or combination necessary.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="text-center mt-5">
-          <a href="services.html" class="btn btn-1">View More</a>
         </div>
       </div>
     </div>
+
     <div class="section mt-5" id="featuredWork">
       <div class="container">
         <h1 class="section-title">Featured Work</h1>
@@ -181,7 +393,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-md-6 col-lg-4 my-2">
             <div class="feat-outer-container border px-2 py-4 mx-auto">
               <div class="feat-container">
@@ -207,7 +418,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-md-6 col-lg-4 my-2">
             <div class="feat-outer-container border px-2 py-4 mx-auto">
               <div class="feat-container">
@@ -236,17 +446,15 @@
         </div>
 
         <div class="text-center mt-5">
-          <a href="./featuredWork.html" class="btn btn-1">View More</a>
+          <a href="/featuredWork.html" class="btn btn-1">View More</a>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid bg-2 py-5" id="counts">
+    <div class="container-fluid bg-2" id="counts">
       <div class="container text-center my-3">
-        <h1 class="display-4" style="font-weight: 900">
-          Some count that matters
-        </h1>
-        <p class="fw-bold">
+        <h1 class="display-4 mb-0" id="count-title">Some count that matters</h1>
+        <p class="fw-bold mb-4" style="font-size: 18px">
           Our achievement in the journey depicted in numbers
         </p>
         <div class="count-container">
@@ -291,12 +499,16 @@
         <div class="container">
           <div>
             <div class="gallery-outer">
-              <div class="gallery-control-prev"></div>
+              <div class="gallery-control-prev">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div class="gallery-control-next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
               <div class="gallery-container">
                 <div class="gallery-item gallery-hidden" data-gal-id="2">
                   <img
-                    loading="lazy"
-                    src="./img/gallery/1.jpg"
+                    src="/img/gallery/1.jpg"
                     width="1080px"
                     height="720px"
                     alt=""
@@ -304,8 +516,7 @@
                 </div>
                 <div class="gallery-item gallery-hidden-left" data-gal-id="3">
                   <img
-                    loading="lazy"
-                    src="./img/gallery/2.jpg"
+                    src="/img/gallery/2.jpg"
                     width="1080px"
                     height="720px"
                     alt=""
@@ -313,8 +524,7 @@
                 </div>
                 <div class="gallery-item gallery-prev" data-gal-id="4">
                   <img
-                    loading="lazy"
-                    src="./img/gallery/3.jpg"
+                    src="/img/gallery/3.jpg"
                     width="1080px"
                     height="720px"
                     alt=""
@@ -322,8 +532,7 @@
                 </div>
                 <div class="gallery-item gallery-active" data-gal-id="5">
                   <img
-                    loading="lazy"
-                    src="./img/gallery/4.jpg"
+                    src="/img/gallery/4.jpg"
                     width="1080px"
                     height="720px"
                     alt=""
@@ -331,8 +540,7 @@
                 </div>
                 <div class="gallery-item gallery-next" data-gal-id="6">
                   <img
-                    loading="lazy"
-                    src="./img/gallery/5.jpg"
+                    src="/img/gallery/5.jpg"
                     width="1080px"
                     height="720px"
                     alt=""
@@ -340,8 +548,7 @@
                 </div>
                 <div class="gallery-item gallery-hidden-right" data-gal-id="7">
                   <img
-                    loading="lazy"
-                    src="./img/gallery/6.jpg"
+                    src="/img/gallery/6.jpg"
                     width="1080px"
                     height="720px"
                     alt=""
@@ -349,8 +556,7 @@
                 </div>
                 <div class="gallery-item gallery-hidden" data-gal-id="8">
                   <img
-                    loading="lazy"
-                    src="./img/gallery/7.jpg"
+                    src="/img/gallery/7.jpg"
                     width="1080px"
                     height="720px"
                     alt=""
@@ -358,8 +564,7 @@
                 </div>
                 <div class="gallery-item gallery-hidden" data-gal-id="9">
                   <img
-                    loading="lazy"
-                    src="./img/gallery/8.jpg"
+                    src="/img/gallery/8.jpg"
                     width="1080px"
                     height="720px"
                     alt=""
@@ -367,8 +572,7 @@
                 </div>
                 <div class="gallery-item gallery-hidden">
                   <img
-                    loading="lazy"
-                    src="./img/gallery/9.jpg"
+                    src="/img/gallery/9.jpg"
                     width="1080px"
                     height="720px"
                     alt=""
@@ -376,8 +580,7 @@
                 </div>
                 <div class="gallery-item gallery-hidden">
                   <img
-                    loading="lazy"
-                    src="./img/gallery/10.jpg"
+                    src="/img/gallery/10.jpg"
                     width="1080px"
                     height="720px"
                     alt=""
@@ -385,8 +588,7 @@
                 </div>
                 <div class="gallery-item gallery-hidden">
                   <img
-                    loading="lazy"
-                    src="./img/gallery/11.jpg"
+                    src="/img/gallery/11.jpg"
                     width="1080px"
                     height="720px"
                     alt=""
@@ -394,8 +596,7 @@
                 </div>
                 <div class="gallery-item gallery-hidden">
                   <img
-                    loading="lazy"
-                    src="./img/gallery/12.jpg"
+                    src="/img/gallery/12.jpg"
                     width="1080px"
                     height="720px"
                     alt=""
@@ -403,8 +604,7 @@
                 </div>
                 <div class="gallery-item gallery-hidden">
                   <img
-                    loading="lazy"
-                    src="./img/gallery/13.jpg"
+                    src="/img/gallery/13.jpg"
                     width="1080px"
                     height="720px"
                     alt=""
@@ -412,8 +612,7 @@
                 </div>
                 <div class="gallery-item gallery-hidden">
                   <img
-                    loading="lazy"
-                    src="./img/gallery/14.jpg"
+                    src="/img/gallery/14.jpg"
                     width="1080px"
                     height="720px"
                     alt=""
@@ -421,8 +620,7 @@
                 </div>
                 <div class="gallery-item gallery-hidden">
                   <img
-                    loading="lazy"
-                    src="./img/gallery/15.jpg"
+                    src="/img/gallery/15.jpg"
                     width="1080px"
                     height="720px"
                     alt=""
@@ -430,8 +628,7 @@
                 </div>
                 <div class="gallery-item gallery-hidden">
                   <img
-                    loading="lazy"
-                    src="./img/gallery/16.jpg"
+                    src="/img/gallery/16.jpg"
                     width="1080px"
                     height="720px"
                     alt=""
@@ -439,15 +636,13 @@
                 </div>
                 <div class="gallery-item gallery-hidden" data-gal-id="1">
                   <img
-                    loading="lazy"
-                    src="./img/gallery/17.jpg"
+                    src="/img/gallery/17.jpg"
                     width="1080px"
                     height="720px"
                     alt=""
                   />
                 </div>
               </div>
-              <div class="gallery-control-next"></div>
             </div>
             <div class="gallery-thumbnail">
               <div
@@ -455,8 +650,7 @@
                 data-gal-id="2"
               >
                 <img
-                  loading="lazy"
-                  src="./img/gallery/thumb/1.jpg"
+                  src="/img/gallery/thumb/1.jpg"
                   height="100px"
                   width="150px"
                   alt=""
@@ -467,8 +661,7 @@
                 data-gal-id="3"
               >
                 <img
-                  loading="lazy"
-                  src="./img/gallery/thumb/2.jpg"
+                  src="/img/gallery/thumb/2.jpg"
                   height="100px"
                   width="150px"
                   alt=""
@@ -479,8 +672,7 @@
                 data-gal-id="4"
               >
                 <img
-                  loading="lazy"
-                  src="./img/gallery/thumb/3.jpg"
+                  src="/img/gallery/thumb/3.jpg"
                   height="100px"
                   width="150px"
                   alt=""
@@ -491,8 +683,7 @@
                 data-gal-id="5"
               >
                 <img
-                  loading="lazy"
-                  src="./img/gallery/thumb/4.jpg"
+                  src="/img/gallery/thumb/4.jpg"
                   height="100px"
                   width="150px"
                   alt=""
@@ -503,8 +694,7 @@
                 data-gal-id="6"
               >
                 <img
-                  loading="lazy"
-                  src="./img/gallery/thumb/5.jpg"
+                  src="/img/gallery/thumb/5.jpg"
                   height="100px"
                   width="150px"
                   alt=""
@@ -515,8 +705,7 @@
                 data-gal-id="7"
               >
                 <img
-                  loading="lazy"
-                  src="./img/gallery/thumb/6.jpg"
+                  src="/img/gallery/thumb/6.jpg"
                   height="100px"
                   width="150px"
                   alt=""
@@ -527,8 +716,7 @@
                 data-gal-id="8"
               >
                 <img
-                  loading="lazy"
-                  src="./img/gallery/thumb/7.jpg"
+                  src="/img/gallery/thumb/7.jpg"
                   height="100px"
                   width="150px"
                   alt=""
@@ -539,8 +727,7 @@
                 data-gal-id="9"
               >
                 <img
-                  loading="lazy"
-                  src="./img/gallery/thumb/8.jpg"
+                  src="/img/gallery/thumb/8.jpg"
                   height="100px"
                   width="150px"
                   alt=""
@@ -548,8 +735,7 @@
               </div>
               <div class="gallery-thumb-item gallery-thumb-hidden-right">
                 <img
-                  loading="lazy"
-                  src="./img/gallery/thumb/9.jpg"
+                  src="/img/gallery/thumb/9.jpg"
                   height="100px"
                   width="150px"
                   alt=""
@@ -557,8 +743,7 @@
               </div>
               <div class="gallery-thumb-item gallery-thumb-hidden">
                 <img
-                  loading="lazy"
-                  src="./img/gallery/thumb/10.jpg"
+                  src="/img/gallery/thumb/10.jpg"
                   height="100px"
                   width="150px"
                   alt=""
@@ -566,8 +751,7 @@
               </div>
               <div class="gallery-thumb-item gallery-thumb-hidden">
                 <img
-                  loading="lazy"
-                  src="./img/gallery/thumb/11.jpg"
+                  src="/img/gallery/thumb/11.jpg"
                   height="100px"
                   width="150px"
                   alt=""
@@ -575,8 +759,7 @@
               </div>
               <div class="gallery-thumb-item gallery-thumb-hidden">
                 <img
-                  loading="lazy"
-                  src="./img/gallery/thumb/12.jpg"
+                  src="/img/gallery/thumb/12.jpg"
                   height="100px"
                   width="150px"
                   alt=""
@@ -584,8 +767,7 @@
               </div>
               <div class="gallery-thumb-item gallery-thumb-hidden">
                 <img
-                  loading="lazy"
-                  src="./img/gallery/thumb/13.jpg"
+                  src="/img/gallery/thumb/13.jpg"
                   height="100px"
                   width="150px"
                   alt=""
@@ -593,8 +775,7 @@
               </div>
               <div class="gallery-thumb-item gallery-thumb-hidden">
                 <img
-                  loading="lazy"
-                  src="./img/gallery/thumb/14.jpg"
+                  src="/img/gallery/thumb/14.jpg"
                   height="100px"
                   width="150px"
                   alt=""
@@ -602,8 +783,7 @@
               </div>
               <div class="gallery-thumb-item gallery-thumb-hidden">
                 <img
-                  loading="lazy"
-                  src="./img/gallery/thumb/15.jpg"
+                  src="/img/gallery/thumb/15.jpg"
                   height="100px"
                   width="150px"
                   alt=""
@@ -611,8 +791,7 @@
               </div>
               <div class="gallery-thumb-item gallery-thumb-hidden-left">
                 <img
-                  loading="lazy"
-                  src="./img/gallery/thumb/16.jpg"
+                  src="/img/gallery/thumb/16.jpg"
                   height="100px"
                   width="150px"
                   alt=""
@@ -623,8 +802,7 @@
                 data-gal-id="1"
               >
                 <img
-                  loading="lazy"
-                  src="./img/gallery/thumb/17.jpg"
+                  src="/img/gallery/thumb/17.jpg"
                   height="100px"
                   width="150px"
                   alt=""
@@ -638,11 +816,40 @@
       <div class="container mt-5 py-5">
         <div class="row">
           <div class="col-md-6">
-            <div class="container">
-              <p class="text-4 fw-bold">TESTIMONIALS</p>
-              <h1 class="text-3 display-5 fw-bold">
-                What people say <br />about Us.
-              </h1>
+            <div
+              class="container h-100 d-flex flex-column justify-content-between"
+            >
+              <div>
+                <p class="text-4 fw-bold">TESTIMONIALS</p>
+                <h1 class="text-3 display-5 fw-bold">
+                  What people say <br />about Us.
+                </h1>
+              </div>
+              <div
+                class="d-flex justify-content-around mb-5"
+                style="width: 15rem"
+              >
+                <i
+                  class="fa-solid fa-circle testimonial-icon icon-active"
+                  data-test-id="1"
+                ></i>
+                <i
+                  class="fa-solid fa-circle testimonial-icon"
+                  data-test-id="2"
+                ></i>
+                <i
+                  class="fa-solid fa-circle testimonial-icon"
+                  data-test-id="3"
+                ></i>
+                <i
+                  class="fa-solid fa-circle testimonial-icon"
+                  data-test-id="4"
+                ></i>
+                <i
+                  class="fa-solid fa-circle testimonial-icon"
+                  data-test-id="5"
+                ></i>
+              </div>
             </div>
           </div>
           <div class="col-md-6">
@@ -650,7 +857,7 @@
               <div class="testimonial-container">
                 <div class="testimonial-prev"></div>
                 <div id="testimonial-container">
-                  <div class="testimonial-card card-active">
+                  <div class="testimonial-card card-active" data-test-id="1">
                     <div class="img">
                       <img
                         src="https://i.picsum.photos/id/473/200/200.jpg?hmac=lXsJQxtsh73ygSCMmcWA-YqIpQ4FjdxUYkkuLTAPBfM"
@@ -670,7 +877,7 @@
                       <p class="mb-0">Lorem, ipsum dolor.</p>
                     </div>
                   </div>
-                  <div class="testimonial-card card-next">
+                  <div class="testimonial-card card-next" data-test-id="2">
                     <div class="img">
                       <img
                         src="https://i.picsum.photos/id/200/200/200.jpg?hmac=mk1Tu6dXHQvpaA8RfxlDUZjbWG23krNkiB9kyYoEmO8"
@@ -690,7 +897,7 @@
                       <p class="mb-0">Lorem, ipsum dolor.</p>
                     </div>
                   </div>
-                  <div class="testimonial-card card-hide">
+                  <div class="testimonial-card card-hide" data-test-id="3">
                     <div class="img">
                       <img
                         src="https://i.picsum.photos/id/685/200/200.jpg?hmac=1IjDFMSIa0T_JSvcq79_e2NWPwRJg61Ufbfu4eM4HvA"
@@ -710,7 +917,7 @@
                       <p class="mb-0">Lorem, ipsum dolor.</p>
                     </div>
                   </div>
-                  <div class="testimonial-card card-hide">
+                  <div class="testimonial-card card-hide" data-test-id="4">
                     <div class="img">
                       <img
                         src="https://i.picsum.photos/id/890/200/200.jpg?hmac=_chNVuEZW4X8X4PEIIJNyv3kMTFOR517hu8zLfMAf70"
@@ -730,7 +937,7 @@
                       <p class="mb-0">Lorem, ipsum dolor.</p>
                     </div>
                   </div>
-                  <div class="testimonial-card card-prev">
+                  <div class="testimonial-card card-prev" data-test-id="5">
                     <div class="img">
                       <img
                         src="https://i.picsum.photos/id/1053/200/200.jpg?hmac=JOtR2adXynxSVClz0LNlPZjW0TJTRXc7c15kka2QoRk"
@@ -770,11 +977,12 @@
       </div>
     </div>
 
-    <div class="container-fluid bg-1 px-4 mt-5">
+    <div class="container-fluid bg-1 px-4 pb-4 mt-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-xl-6">
             <form action="#" method="post" id="footer">
+              @csrf
               <div
                 id="getQuoteBox"
                 class="d-flex flex-column border bg-white thick-shadow"
@@ -837,18 +1045,23 @@
               </div>
             </form>
           </div>
-          <div class="col-lg-6 d-flex text-white">
+          <div class="col-xl-6 d-flex text-white">
             <div class="mx-auto my-auto">
-              <p class="mb-5 text-center">Businesses that trusts Foxhole QA</p>
+              <p
+                class="mb-5 text-center"
+                style="font-size: 18px; font-weight: 700"
+              >
+                Businesses that trusts Foxhole QA
+              </p>
               <div
                 id="footer-brands"
                 class="d-flex flex-wrap justify-content-center"
               >
-                <img src="./img/logo/Partner Logo 1.png" alt="" height="50px" />
-                <img src="./img/logo/Partner Logo 2.png" alt="" height="50px" />
-                <img src="./img/logo/Partner Logo 3.png" alt="" height="50px" />
-                <img src="./img/logo/Brand Logo 1.png" alt="" height="50px" />
-                <img src="./img/logo/Brand Logo 2.png" alt="" height="50px" />
+                <img src="/img/logo/Partner Logo 1.png" alt="" height="50px" />
+                <img src="/img/logo/Partner Logo 2.png" alt="" height="50px" />
+                <img src="/img/logo/Partner Logo 3.png" alt="" height="50px" />
+                <img src="/img/logo/Brand Logo 1.png" alt="" height="50px" />
+                <img src="/img/logo/Brand Logo 2.png" alt="" height="50px" />
               </div>
 
               <div class="text-center">
@@ -866,7 +1079,10 @@
         </div>
       </div>
 
-      <div class="row justify-content-center mt-3 text-center text-white">
+      <div
+        class="row justify-content-center text-center text-white"
+        style="font-size: 12px"
+      >
         <div
           class="col-lg-4 p-2 d-flex justify-content-center text-dark"
           style="gap: 5px"
@@ -884,62 +1100,98 @@
             <i class="fa-brands fa-twitter"></i>
           </div>
         </div>
-        <div class="col-lg-4 p-2">
-          <p class="mb-0">© 2022 Foxhole QA LLC. All Rights Reserved.</p>
+        <div class="col-lg-4 d-flex">
+          <p class="mx-auto my-auto">
+            © 2022 Foxhole QA LLC. All Rights Reserved.
+          </p>
         </div>
-        <div class="col-lg-4 p-2">
-          <p class="mb-0">LOS ANGELES, CA | AUSTIN, TX | MIAMI, FL</p>
+        <div class="col-lg-4 d-flex">
+          <p class="mx-auto my-auto">
+            LOS ANGELES, CA | AUSTIN, TX | MIAMI, FL
+          </p>
         </div>
       </div>
     </div>
 
     <div class="modal" id="subscription">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content thick-shadow border-0">
-                <div class="modal-body">
-                    <div class="d-flex">
-                        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal"></button>
-                    </div>
-    
-                    <div class="text-center py-3">
-                        <h1 class="modal-head">Subscribe to the Newsletter</h1>
-                        <p>By subscribing to our mailing list you will always get the<br>latest news and updates from us.</p>
-    
-                        <form action="" method="post">
-                            <input type="text" name="" id="" placeholder="Full Name" class="form-control w-75 mx-auto my-2">
-                            <input type="email" name="" id="" placeholder="Email Address" class="form-control w-75 mx-auto my-2">
-    
-                            <input type="submit" value="Submit" class="btn btn-danger btn-1 my-4 d-none">
-                            <button type="button" class="modal-btn btn btn-1 my-4" data-bs-toggle="modal" data-bs-target="#subscriptionConfirm">Submit</button>
-                        </form>
-                    </div>
-                </div>
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content thick-shadow border-0">
+          <div class="modal-body">
+            <div class="d-flex">
+              <button
+                type="button"
+                class="btn-close ms-auto"
+                data-bs-dismiss="modal"
+              ></button>
             </div>
+
+            <div class="text-center py-3">
+              <h1 class="modal-head">Subscribe to the Newsletter</h1>
+              <p>
+                By subscribing to our mailing list you will always get the<br />latest
+                news and updates from us.
+              </p>
+
+              <form action="" method="post">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Full Name"
+                  class="form-control w-75 mx-auto my-2"
+                />
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Email Address"
+                  class="form-control w-75 mx-auto my-2"
+                />
+
+                <input
+                  type="submit"
+                  value="Submit"
+                  class="btn btn-danger btn-1 my-4 d-none"
+                />
+                <button
+                  type="button"
+                  class="modal-btn btn btn-1 my-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#subscriptionConfirm"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="modal" id="subscriptionConfirm">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content thick-shadow border-0">
-                <div class="modal-body">
-                    <div class="d-flex">
-                        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal"></button>
-                    </div>
-    
-                    <div class="text-center py-3">
-                        <h1 class="modal-head">Thanks for Subscribing!</h1>
-                        <p>You are now subscribed to the Foxhole<br>QA newsletter</p>
-    
-                        <button class="modal-btn btn btn-1 my-1" data-bs-dismiss="modal">Exit</button>
-                    </div>
-                </div>
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content thick-shadow border-0">
+          <div class="modal-body">
+            <div class="d-flex">
+              <button
+                type="button"
+                class="btn-close ms-auto"
+                data-bs-dismiss="modal"
+              ></button>
             </div>
+
+            <div class="text-center py-3">
+              <h1 class="modal-head">Thanks for Subscribing!</h1>
+              <p>You are now subscribed to the Foxhole<br />QA newsletter</p>
+
+              <button class="modal-btn btn btn-1 my-1" data-bs-dismiss="modal">
+                Exit
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    
-    
-    
-    
 
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap.js"></script>

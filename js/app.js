@@ -4,7 +4,7 @@ $(document).ready(function () {
             function(){
                 $('div.read-more', this).show();
                 $('div', this).animate({
-                    height: '12rem',
+                    height: '11rem',
                 }, 50);
             },
             function(){
@@ -38,13 +38,13 @@ $(document).ready(function () {
                 });
             }
 
-            if($(window).scrollTop() < ($('#services').offset().top - 200)){
+            if($(window).scrollTop() < ($('#services').offset().top - 120)){
                 changeActiveMenu($('.nav-link.hero'));
-            }else if($(window).scrollTop() < $('#featuredWork').offset().top - 200){
+            }else if($(window).scrollTop() < $('#featuredWork').offset().top - 120){
                 changeActiveMenu($('.nav-link.services'));
-            }else if($(window).scrollTop() < $('#aboutUs').offset().top - 200){
+            }else if($(window).scrollTop() < $('#aboutUs').offset().top - 120){
                 changeActiveMenu($('.nav-link.featuredWork'));
-            }else if($(window).scrollTop() < $('#getQuoteBox').offset().top - 200){
+            }else if($(window).scrollTop() < $('#getQuoteBox').offset().top - 160){
                 changeActiveMenu($('.nav-link.aboutUs'));
             }else{
                 $('.active-menu').removeClass('active-menu');
@@ -62,6 +62,34 @@ $(document).ready(function () {
         }
     });
 
+    // $('.navbar-brand a').click(function(e){
+    //     e.preventDefault();
+    //     window.scrollTo(0, 0);
+    // })
+    $('.toFooter').click(function(e){
+        e.preventDefault();
+        scrollToElement($('#getQuoteBox'), 150);
+    });
+    $('.nav-item a:not(.blog):not(.btn)').click(function(e){
+        e.preventDefault();
+        scrollToElement($(`#${$(this).attr('href')}`), 100);
+    });
+    $('#servicesShowMoreBtn').click(function(e){
+        e.preventDefault();
+        if($(this).html() == 'View Less'){
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#services").offset().top - 100
+            }, 500);
+        }
+        // $('.service-container.collapse').collapse('toggle');
+        $(this).attr('href', ($(this).attr('href') == '#moreService')? '#serviceDefault' : '#moreService');
+        $(this).html(($(this).html() == 'View More')? 'View Less':'View More');
+
+    });
+
+    function scrollToElement($el, $offset){
+        window.scrollTo(0, $el.offset().top - $offset);
+    }
     function isVisible($el) {
         const winTop = $(window).scrollTop();
         const winBottom = winTop + $(window).height();
