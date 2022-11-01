@@ -17,7 +17,7 @@ $(document).ready(function () {
     });
 
     $(".toTop").click(function () {
-        this.scrollTo = 0;
+        scrollToElement($('#hero'), 100);
     });
 
     let count = 0;
@@ -51,13 +51,17 @@ $(document).ready(function () {
             }
 
         }
+
+        if($(window).scrollTop() > 100){
+            $('#back-to-top').fadeIn(500);
+        }else{
+            $('#back-to-top').fadeOut(500);
+        }
     });
 
     $("input").change(()=>{
-        console.log('Change1', $(this).val());
 
         if($(this).val() != ''){
-            console.log('Change');
             $(this).removeClass('error');
         }
     });
@@ -76,15 +80,7 @@ $(document).ready(function () {
     });
     $('#servicesShowMoreBtn').click(function(e){
         e.preventDefault();
-        if($(this).html() == 'View Less'){
-            $([document.documentElement, document.body]).animate({
-                scrollTop: $("#services").offset().top - 100
-            }, 500);
-        }
-        // $('.service-container.collapse').collapse('toggle');
-        $(this).attr('href', ($(this).attr('href') == '#moreService')? '#serviceDefault' : '#moreService');
         $(this).html(($(this).html() == 'View More')? 'View Less':'View More');
-
     });
 
     function scrollToElement($el, $offset){
