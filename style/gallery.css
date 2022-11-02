@@ -121,10 +121,10 @@
     height: var(--img-height);
 }
 .arrow-container.arrow-right i{
-    margin: auto auto auto 10px;
+    margin: auto auto auto 20px;
 }
 .arrow-container.arrow-left i{
-    margin: auto 10px auto auto;
+    margin: auto 20px auto auto;
 }
 
 

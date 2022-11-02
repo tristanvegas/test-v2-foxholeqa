@@ -1,6 +1,5 @@
 * {
-    font-family: raleway, sans-serif;
-    font-size: 16px;
+    font-family: raleway, Tahoma, Geneva, Verdana, sans-serif;
 }
 .bg-1 {
     background-color: #101522;
@@ -73,7 +72,7 @@
 }
 
 .navbar-container {
-    padding: 8px 0rem 8px 2rem;
+    padding: 8px 2rem;
 }
 .nav-item {
     width: fit-content;
@@ -81,9 +80,9 @@
 }
 .nav-link {
     position: relative;
-    padding: 8px !important;
-    font-weight: 600 !important;
-    font-size: 14px;
+    padding: 0px 0.2rem !important;
+    font-weight: 500 !important;
+    margin: 0.5rem;
     width: fit-content;
 }
 .nav-link:not(.btn):after {
@@ -104,8 +103,8 @@
 }
 .nav-item > .btn {
     width: fit-content;
-    margin-left: 10px;
-    padding: 0.5rem 1rem !important;
+    font-weight: normal;
+    padding: 0.5rem !important;
 }
 
 .section {
@@ -135,6 +134,7 @@
 #hero {
     height: calc(100vh - 86px);
     margin-top: 86px;
+    /* padding: 2rem; */
     background-image: url("../img/HeroImageFQA.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -144,11 +144,8 @@
 #hero > div > p {
     display: none;
 }
-#hero > div > h1 {
-    font-weight: 700;
-}
-#hero > div > .btn{
-    padding: .8rem 1rem;
+#hero > div > .btn {
+    padding: 0.8rem 1rem;
 }
 #services {
     padding-bottom: 5rem;
@@ -233,9 +230,6 @@
     height: 10rem;
     font-size: 0.8rem;
 }
-.feat-container > div > p{
-    font-size: .8rem;
-}
 .read-more {
     display: none;
     margin-top: 0.3rem;
@@ -276,11 +270,9 @@
     max-width: 20rem;
     padding: 0.2rem 2rem;
 }
+.count > h1 > span,
 .count > h1 {
     font-family: abel;
-}
-.count-num{
-    font-size: 2.5rem;
 }
 
 #getQuoteBox {
@@ -293,6 +285,10 @@
 }
 #getQuoteBox > div > .btn {
     padding: 0.5rem 3rem;
+}
+.footerText{
+    font-size: 18px;
+    font-weight: 900;
 }
 #footer-brands {
     gap: 20px;
@@ -316,12 +312,13 @@
 }
 
 .social-icon:hover {
-    background-color: #CA2933;
+    background-color: #101522;
     transition: all 0.5s;
+    border: 1px solid white;
 }
 .social-icon:hover > i {
     transition: all 0.5s;
-    color: #ffffff;
+    color: white;
 }
 .modal-head {
     /* margin-bottom: 5rem; */
@@ -335,6 +332,8 @@
 }
 
 p.aboutus-p {
+    margin: auto;
+    width: 40rem;
     text-align: center;
     margin-bottom: 50px;
     font-size: 12px;
@@ -343,45 +342,37 @@ p.aboutus-p {
 h1.section-title.aboutus {
     margin-bottom: 50px;
 }
-.footerText{
+
+/* featured work page */
+.feat-card-outer-container.border.rounded.px-2.py-2.mx-auto {
+    box-shadow: 0px 1px 4px rgb(0 0 0 / 60%);
+    -webkit-box-shadow: 0px 1px 4px rgb(0 0 0 / 60%);
+    -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 1rem;
+}
+
+.feat-title {
+    font-family: "Raleway", "Helvetica Neue";
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.6rem;
+    font-weight: bolder;
+    text-align: center;
+    color: #297fca;
+}
+
+img.banner {
+    border-radius: 50px;
+}
+
+p.aboutus-p-page {
+    text-align: -webkit-center;
+    text-align: center;
     font-size: 20px;
-    font-weight: 900;
 }
 
-/* featured work page */
-.feat-card-outer-container.border.rounded.px-2.py-2.mx-auto {
-    box-shadow: 0px 1px 4px rgb(0 0 0 / 60%);
-    -webkit-box-shadow: 0px 1px 4px rgb(0 0 0 / 60%);
-    -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
-    border-radius: 1rem;
-}
-
-.feat-title {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    position: relative;
-    font-size: 2.5rem;
-    font-weight: 900;
-    text-align: center;
-    color: #297fca;
-}
-
-/* featured work page */
-.feat-card-outer-container.border.rounded.px-2.py-2.mx-auto {
-    box-shadow: 0px 1px 4px rgb(0 0 0 / 60%);
-    -webkit-box-shadow: 0px 1px 4px rgb(0 0 0 / 60%);
-    -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
-    border-radius: 1rem;
-}
-
-.feat-title {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    position: relative;
-    font-size: 2.5rem;
-    font-weight: 900;
-    text-align: center;
-    color: #297fca;
+#featuredWorkPage {
+    padding-bottom: 7rem !important;
 }
 
 #back-to-top{
@@ -487,7 +478,7 @@ h1.section-title.aboutus {
         padding: 3rem 4.3rem;
     }
     #footer-brands > img {
-        height: 100px;
+        height: 60px;
     }
 }
 @media only screen and (min-width: 1024px) {
@@ -503,17 +494,12 @@ h1.section-title.aboutus {
         box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
     }
     #footer-brands > img {
-        height: 70px;
+        height: 60px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     #footer-brands > img {
         height: 60px;
-    }
-}
-@media only screen and (min-width: 1560px) {
-    #footer-brands > img {
-        height: 100px;
     }
 }

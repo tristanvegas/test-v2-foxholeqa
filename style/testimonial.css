@@ -115,6 +115,7 @@
 }
 
 .testimonial-icon{
+    font-size: 12px;
     transition: color .5s ease-in-out;
 }
 .testimonial-icon:hover{
